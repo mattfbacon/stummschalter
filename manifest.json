@@ -1,0 +1,25 @@
+{
+	"manifest_version": 2,
+	"name": "Der Stummschalter",
+	"version": "0.1",
+	"description": "Schaltet Webseiten automatisch stumm bzw. wieder laut nach Wünsch",
+	"background": {
+		"scripts": ["out/background.js"],
+		"persistent": false,
+		"type": "module"
+	},
+	"icons": {
+		"48": "icons/icon.svg",
+		"96": "icons/icon.svg"
+	},
+	"browser_specific_settings": {
+		"gecko": {
+			"id": "stummschalter@felle.nz"
+		}
+	},
+	"permissions": ["tabs"],
+	"page_action": {
+		"default_icon": "icons/pageAction.png",
+		"default_title": "Stummschalter-Override aufheben"
+	}
+}
